@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>Test – voziky-brno.cz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            max-width: 600px;
+            margin: 15vh auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .ok {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h1>Test GitHub Pages</h1>
+    <p class="ok">Pokud tohle vidíš, web běží správně 🎉</p>
+    <p>
+        Doména:<br>
+        <strong>https://www.voziky-brno.cz</strong>
+    </p>
+    <p>
+        Čas testu:<br>
+        <strong><span id="time"></span></strong>
+    </p>
+</div>
+
+<script>
+    document.getElementById("time").textContent =
+        new Date().toLocaleString("cs-CZ");
+</script>
+
+</body>
+</html>
