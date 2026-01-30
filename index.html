@@ -2,53 +2,107 @@
 <html lang="cs">
 <head>
     <meta charset="utf-8">
-    <title>Test – voziky-brno.cz</title>
+    <title>voziky-brno.cz – probíhá údržba</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Dočasně neindexovat -->
     <meta name="robots" content="noindex, nofollow">
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f5f5f5;
+            background: #f4f4f4;
             margin: 0;
             padding: 0;
+            color: #333;
         }
-        .box {
-            max-width: 600px;
-            margin: 15vh auto;
+
+        .container {
+            max-width: 760px;
+            margin: 12vh auto;
             background: #fff;
-            padding: 2rem;
-            border-radius: 6px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            text-align: center;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
         }
+
         h1 {
             margin-top: 0;
+            color: #1a237e;
         }
-        .ok {
-            color: #2e7d32;
-            font-weight: bold;
+
+        .notice {
+            background: #e3f2fd;
+            border-left: 5px solid #1e88e5;
+            padding: 1rem 1.2rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .contacts {
+            margin-top: 2rem;
+        }
+
+        .contacts p {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+
+        .contacts strong {
+            display: inline-block;
+            width: 130px;
+        }
+
+        footer {
+            margin-top: 2.5rem;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-<div class="box">
-    <h1>Test GitHub Pages</h1>
-    <p class="ok">Pokud tohle vidíš, web běží správně 🎉</p>
-    <p>
-        Doména:<br>
-        <strong>https://www.voziky-brno.cz</strong>
-    </p>
-    <p>
-        Čas testu:<br>
-        <strong><span id="time"></span></strong>
-    </p>
-</div>
+<div class="container">
+    <h1>voziky-brno.cz</h1>
 
-<script>
-    document.getElementById("time").textContent =
-        new Date().toLocaleString("cs-CZ");
-</script>
+    <div class="notice">
+        <strong>Probíhá technická údržba webu.</strong><br>
+        Web momentálně upravujeme, půjčovna vozíků však funguje bez omezení.
+    </div>
+
+    <p>
+        Pro zapůjčení přívěsného vozíku nebo jakýkoliv dotaz nás prosím kontaktujte:
+    </p>
+
+    <div class="contacts">
+        <p>
+            <strong>Telefon:</strong>
+            <a href="tel:+420775232521">+420&nbsp;775&nbsp;232&nbsp;521</a>
+        </p>
+
+        <p>
+            <strong>E-mail:</strong>
+            <a href="mailto:abiword@email.cz">abiword@email.cz</a>
+        </p>
+
+        <p>
+            <strong>Adresa:</strong>
+            Brno – Soběšice, Dohnalova (Zeiberlichova&nbsp;131/1)
+        </p>
+
+        <p>
+            <strong>Otevírací doba:</strong>
+            denně 8:00 – 20:00<br>
+            <em>(po předchozím telefonickém zavolání)</em>
+        </p>
+    </div>
+
+    <footer>
+        Děkujeme za pochopení.<br>
+        Plná verze webu bude brzy zprovozněna.
+    </footer>
+</div>
 
 </body>
 </html>
