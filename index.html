@@ -1,107 +1,177 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="utf-8">
-    <title>voziky-brno.cz – probíhá údržba</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Půjčovna vozíků Brno - Soběšice</title>
+  <meta name="keywords" content="Brno Soběšice, půjčovna vozíků, přívěsné vozíky, půjčovna přívěsných vozíků">
 
-    <!-- Dočasně neindexovat -->
-    <meta name="robots" content="noindex, nofollow">
+  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-
-        .container {
-            max-width: 760px;
-            margin: 12vh auto;
-            background: #fff;
-            padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-        }
-
-        h1 {
-            margin-top: 0;
-            color: #1a237e;
-        }
-
-        .notice {
-            background: #e3f2fd;
-            border-left: 5px solid #1e88e5;
-            padding: 1rem 1.2rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-
-        .contacts {
-            margin-top: 2rem;
-        }
-
-        .contacts p {
-            margin: 0.5rem 0;
-            line-height: 1.6;
-        }
-
-        .contacts strong {
-            display: inline-block;
-            width: 130px;
-        }
-
-        footer {
-            margin-top: 2.5rem;
-            font-size: 0.9rem;
-            color: #666;
-            text-align: center;
-        }
-    </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-<body>
 
-<div class="container">
-    <h1>voziky-brno.cz</h1>
+<body onload="showSection('home')">
 
-    <div class="notice">
-        <strong>Probíhá technická údržba webu.</strong><br>
-        Web momentálně upravujeme, půjčovna vozíků však funguje bez omezení.
-    </div>
+<!-- navigation menu -->
+<div class="w3-bar w3-blue">
+  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showSection('home')"><i class="fa fa-home"></i> Domů</a>
 
-    <p>
-        Pro zapůjčení přívěsného vozíku nebo jakýkoliv dotaz nás prosím kontaktujte:
-    </p>
+  <!--
+  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showSection('o-nas')">O nás</a>
+  -->
+  <!--
+  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showSection('sluzby')">Služby a ceník</a>
+  -->
+  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showSection('obchodni-podminky')">Obchodní podmínky</a>
+  <!--
+  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showSection('kontakt')">Kontakt</a>
+  -->
+</div>
 
-    <div class="contacts">
-        <p>
-            <strong>Telefon:</strong>
-            <a href="tel:+420775232521">+420&nbsp;775&nbsp;232&nbsp;521</a>
-        </p>
+<!-- announcement -->
+<div class="w3-container">
+  <div class="w3-panel w3-pale-green">
+    <p><i class="fa fa-clock-o contact-icon"></i> &nbsp;Otevřeno denně 8:00 - 20:00, po předchozím tel. zavolání&nbsp;&nbsp;<i class="fa fa-phone"></i> +420 775 232 521</p>
+  </div>
+</div>
 
-        <p>
-            <strong>E-mail:</strong>
-            <a href="mailto:abiword@email.cz">abiword@email.cz</a>
-        </p>
+<!-- main content -->
+<div class="w3-container w3-center section" id="home">
+  <h1>Vítejte v Půjčovně vozíků</h1>
+  <p>Nabízíme kvalitní přívěsné vozíky, které splní vaše potřeby.</p>
+  <p><img src="img/voziky001.jpg" alt="Vozíky Brno Soběšice" style="width:100%; max-width:500px;"></p>
 
-        <p>
-            <strong>Adresa:</strong>
-            Brno – Soběšice, Dohnalova (Zeiberlichova&nbsp;131/1)
-        </p>
+  <!--
+  <p>Kontaktujte nás e-mailem nebo telefonicky.</p>
+  -->
 
-        <p>
-            <strong>Otevírací doba:</strong>
-            denně 8:00 – 20:00<br>
-            <em>(po předchozím telefonickém zavolání)</em>
-        </p>
-    </div>
+  <!-- Služby a ceník -->
+  <h1>Služby a ceník</h1>
+  <p style="color:DodgerBlue;">menší vozík (Agados Handy - 7) 205x125x35 cm</p>
+  <p style="color:DodgerBlue;">větší vozík (Agados Přívěs NP-26 N1) 265 × 124 × 40 cm</p>
+  <p>Půjčovné na 24 hod. ... 500 Kč</p>
+  <p>Půjčovné na 6 hod. ... 350 Kč</p>
+  <p>Zapůjčení kurtny ... 50 Kč</p>
+  <p style="color:MediumSeaGreen;">Vratná kauce 2000 Kč v hotovosti předem.</p>
 
-    <footer>
-        Děkujeme za pochopení.<br>
-        Plná verze webu bude brzy zprovozněna.
-    </footer>
+  <!-- Kontakt -->
+  <h1>Kontakt</h1>
+  <p><i class="fa fa-map-marker"></i> &nbsp;Brno Soběšice 644 00, Dohnalova (Zeiberlichova 131/1)</p>
+  <p><i class="fa fa-clock-o contact-icon"></i> &nbsp;Otevřeno denně 8:00 - 20:00, po předchozím tel. zavolání</p>
+  <p><i class="fa fa-phone"></i> &nbsp;+420 775 232 521</p>
+  <p><i class="fa fa-envelope"></i> &nbsp;abiword@email.cz</p>
+
+  <!-- odkaz na mapu seznam.cz -->
+  <p><iframe style="border:none" src="https://frame.mapy.cz/s/lerezojuce" width="380" height="333" frameborder="0"></iframe></p>
+</div>
+
+<!-- about us section -->
+<div class="w3-container section" id="o-nas">
+  <h1>O nás</h1>
+  <p>Vítejte v Půjčovně vozíků. Jsme rodinná firma sídlící v Brně-Soběšicích, která se specializuje na půjčování přívěsných vozíků. Naším cílem je poskytovat kvalitní a spolehlivé služby pro všechny vaše přepravní potřeby.</p>
+  <p>Naše firma byla založena v roce 2020 a od té doby jsme pomohli stovkám zákazníků s přepravou jejich nákladů. Nabízíme širokou škálu přívěsných vozíků různých velikostí a typů, aby vyhovovaly vašim konkrétním požadavkům.</p>
+  <p>Kontaktujte nás, abychom vám mohli pomoci s výběrem nejvhodnějšího vozíku pro vaše potřeby.</p>
+</div>
+
+<!-- services section -->
+<div class="w3-container section" id="sluzby">
+  <h1>Služby a ceník</h1>
+  <p style="color:DodgerBlue;">menší vozík (Agados Handy - 7) 205x125x35 cm</p>
+  <p style="color:DodgerBlue;">větší vozík (Agados Přívěs NP-26 N1) 265 × 124 × 40 cm</p>
+  <p>Půjčovné na 24 hod. ... 400 Kč</p>
+  <p>Půjčovné na 6 hod. ... 250 Kč</p>
+  <p>Zapůjčení kurtny ... 50 Kč</p>
+</div>
+
+<!-- terms and conditions section -->
+<div class="w3-container section" id="obchodni-podminky">
+  <h1>Obchodní podmínky</h1>
+  <h2>Nájemní smlouva o pronájmu vozíku:</h2>
+
+  <p><strong>Smluvní strany</strong>
+    Tyto podmínky upravují vztah mezi půjčovnou vozíků provozovanou Ondřejem Foralem, Zeiberlichova 131/1, Brno 644 00, IČO: 21 53 61 47, dále jen „pronajímatel“ a zákazníkem půjčovny, dále jen „nájemce“.
+  </p>
+
+  <p><strong>Předmětem nájmu</strong> je vozík (přívěs) zapojitelný za automobil, jehož registrační značka bude zapsána do evidence zápůjček vozíků.</p>
+
+  <p><strong>Doklady nutné pro zapůjčení</strong> - nájemce předloží 2 doklady: a) platný řidičský průkaz a b) občanský průkaz nebo cestovní pas.</p>
+
+  <p><strong>Způsob zpracování osobních údajů</strong> ve smyslu zákona č.101/2000 Sb., o ochraně osobních údajů a v souladu s novými předpisy Nařízení EU 679/2016 o ochraně osobních údajů "Nařízení EU o ochraně údajů", (dále jen „zákon o ochraně osobních údajů“), je k dispozici na vyžádání u pronajímatele nebo na jeho webu.</p>
+
+  <p><strong>Platba a zodpovědnost:</strong> Před zapůjčením přívěsu je nájemce povinen uhradit celou částku vč. kauce předem a v hotovosti. Za dobu pronájmu je nájemce odpovědný za přívěs v plném rozsahu, a to včetně ochrany proti krádeži a svévolnému poškození.</p>
+
+  <p><strong>Vratná kauce:</strong> Cena kauce je 2000 Kč v hotovosti předem s návratností oproti vrácení vrácení vozíku a potvrzeno podpisem nájemce do evidence pronajímatele.</p>
+
+  <p><strong>Dodržování tonáže:</strong> Nájemce je povinen dodržet maximální hmotnost nákladu, která je uvedena v technickém průkazu přívěsu.</p>
+
+  <p><strong>Vracení přívěsu:</strong> Nájemce je povinen vrátit pronajatý přívěs včas a v nepoškozeném stavu.</p>
+
+  <p><strong>Prodloužení pronájmu:</strong> Pro prodloužení pronájmu je nutné osobně navštívit půjčovnu a uhradit příslušnou částku.</p>
+
+  <p><strong>Sankce za zpoždění vrácení:</strong> Pokud nájemce nevrátí přívěs včas, bude mu účtováno dalších 6 hodin.</p>
+
+  <p><strong>Ztráta nebo krádež:</strong> Při zpoždění vrácení přívěsu o více než 3 dny se případ považuje za zcizení a bude nahlášen policii. V případě jakýchkoli událostí během pronájmu je nájemce povinen kontaktovat policii a majitele a zajistit protokol.</p>
+
+  <p><strong>Opravy a dodatečné náklady:</strong> Pokud nájemce způsobí poškození přívěsu, je povinen uhradit veškeré náklady na opravu. Při překročení stanovených hodin pronájmu je zákazník povinen uhradit dodatečných 6 hodin.</p>
+
+  <p><strong>Závady a pneumatiky:</strong> Kauce se může zadržet v případě zjištění závady zaviněné zákazníkem, která bude vyčíslena po demontáži a stanovení ceny opravy. Pokud dojde k defektu pneumatiky, zákazník hradí 50% ceny nové pneumatiky. Před převzetím přívěsu je zákazník svépomoci povinen provést kontrolu.</p>
+
+  <p><strong>Nabytí platnosti smlouvy</strong> o pronájmu vozíku vznikne zaplacením půjčovného při převzetí vozíku nájemcem.</p>
+
+  <p><strong>K ukončení platnosti smlouvy</strong> o pronájmu vozíku dojde vrácením vozíku nájemcem za dodržení podmínek smlouvy, vrácením kauce a potvrzením podpisem v evidenci zápůjček vozíků.</p>
+
+  <p>V Brně dne 25.05.2024</p>
+</div>
+
+<!-- contact section -->
+<div class="w3-container section" id="kontakt">
+  <h1>Kontakt</h1>
+  <p><i class="fa fa-map-marker"></i> &nbsp;Brno Soběšice 644 00, Dohnalova (Zeiberlichova 131/1)</p>
+  <p><i class="fa fa-clock-o contact-icon"></i> &nbsp;Otevřeno denně 8:00 - 20:00, po předchozím tel. zavolání</p>
+  <p><i class="fa fa-envelope"></i> &nbsp;info@voziky-brno.cz</p>
+  <p><i class="fa fa-phone"></i> &nbsp;+420 775 232 521</p>
+
+  <!-- odkaz na mapu seznam.cz -->
+  <iframe style="border:none" src="https://frame.mapy.cz/s/lerezojuce" width="500" height="333" frameborder="0"></iframe>
+</div>
+
+<!-- footer -->
+<div class="w3-container w3-light-grey w3-padding-32">
+  <p class="w3-small w3-center">
+    <a class="odkazAS" href="https://www.autoskola-real.cz" target="_blank" rel="noopener noreferrer">
+      Řidičák na sk.B - Autoškola REAL, Brno
+    </a>
+  </p>
+
+  <p class="w3-small w3-center">
+    © 2024-2026 voziky-Brno.cz
+    &nbsp;&nbsp;&nbsp; <i class="fa fa-eye"></i> &nbsp;
+
+    <!-- TOPlist.cz počítadlo návštěvnosti -->
+    <span id="toplistcz1841175">
+      <noscript>
+        <a href="https://www.toplist.cz" title="TOPlist" target="_blank" rel="noopener">
+          <img src="https://toplist.cz/count.asp?id=1841175&logo=mc&njs=1"
+               alt="TOPlist" width="88" height="60" border="0">
+        </a>
+      </noscript>
+    </span>
+
+    <script>
+      (function (d, e, s) {
+        d.getElementById('toplistcz1841175').innerHTML =
+          '<a href="https://www.toplist.cz" title="TOPlist" target="_blank" rel="noopener">' +
+          '<img src="https://toplist.cz/count.asp?id=1841175&logo=mc&http=' +
+          e(d.referrer) + '&t=' + e(d.title) + '&l=' + e(d.URL) + '&wi=' + e(s.width) +
+          '&he=' + e(s.height) + '&cd=' + e(s.colorDepth) +
+          '" width="88" height="60" border="0" alt="TOPlist" />' +
+          '</a>';
+      }(document, encodeURIComponent, window.screen));
+    </script>
+  </p>
 </div>
 
 </body>
