@@ -1,0 +1,15 @@
+
+.section {
+  display: none;
+}
+
+img {
+  border-radius: 8px;
+}
+
+.odkazAS {text-decoration: none;}
+.odkazAS:link    {color: grey}
+.odkazAS:visited {color: grey}
+.odkazAS:active {color: darkBlue}
+.odkazAS:hover {color: darkBlue}
+
