@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Půjčovna vozíků Brno - Soběšice</title>
+  <title>Půjčovna vozíků Brno – Soběšice</title>
   <meta name="keywords" content="Brno Soběšice, půjčovna vozíků, přívěsné vozíky, půjčovna přívěsných vozíků">
 
-  <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="style.css">
@@ -15,75 +15,92 @@
 
 <body onload="showSection('home')">
 
-<!-- navigation menu -->
+<!-- MENU -->
 <div class="w3-bar w3-blue">
-  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showSection('home')"><i class="fa fa-home"></i> Domů</a>
+  <a class="w3-bar-item w3-button" href="javascript:void(0)" onclick="showSection('home')">
+    <i class="fa fa-home"></i> Domů
+  </a>
 
-  <!--
-  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showSection('o-nas')">O nás</a>
-  -->
-  <!--
-  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showSection('sluzby')">Služby a ceník</a>
-  -->
-  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showSection('obchodni-podminky')">Obchodní podmínky</a>
-  <!--
-  <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="showSection('kontakt')">Kontakt</a>
-  -->
+  <a class="w3-bar-item w3-button" href="javascript:void(0)" onclick="showSection('obchodni-podminky')">
+    Obchodní podmínky
+  </a>
 </div>
 
-<!-- announcement -->
+<!-- INFO PANEL -->
 <div class="w3-container">
   <div class="w3-panel w3-pale-green">
-    <p><i class="fa fa-clock-o contact-icon"></i> &nbsp;Otevřeno denně 8:00 - 20:00, po předchozím tel. zavolání&nbsp;&nbsp;<i class="fa fa-phone"></i> +420 775 232 521</p>
+    <p>
+      <i class="fa fa-clock-o"></i>
+      &nbsp;Otevřeno denně 8:00–20:00, po předchozím tel. zavolání
+      &nbsp;&nbsp;
+      <i class="fa fa-phone"></i>
+      +420&nbsp;775&nbsp;232&nbsp;521
+    </p>
   </div>
 </div>
 
-<!-- main content -->
+<!-- HOME = VŠE POD SEBOU -->
 <div class="w3-container w3-center section" id="home">
+
   <h1>Vítejte v Půjčovně vozíků</h1>
   <p>Nabízíme kvalitní přívěsné vozíky, které splní vaše potřeby.</p>
-  <p><img src="img/voziky001.jpg" alt="Vozíky Brno Soběšice" style="width:100%; max-width:500px;"></p>
 
-  <!--
-  <p>Kontaktujte nás e-mailem nebo telefonicky.</p>
-  -->
+  <p>
+    <img src="img/voziky001.jpg"
+         alt="Půjčovna vozíků Brno Soběšice"
+         style="width:100%; max-width:500px;">
+  </p>
 
-  <!-- Služby a ceník -->
+  <!-- SLUŽBY -->
   <h1>Služby a ceník</h1>
-  <p style="color:DodgerBlue;">menší vozík (Agados Handy - 7) 205x125x35 cm</p>
-  <p style="color:DodgerBlue;">větší vozík (Agados Přívěs NP-26 N1) 265 × 124 × 40 cm</p>
-  <p>Půjčovné na 24 hod. ... 500 Kč</p>
-  <p>Půjčovné na 6 hod. ... 350 Kč</p>
-  <p>Zapůjčení kurtny ... 50 Kč</p>
-  <p style="color:MediumSeaGreen;">Vratná kauce 2000 Kč v hotovosti předem.</p>
 
-  <!-- Kontakt -->
+  <p style="color:DodgerBlue;">
+    menší vozík (Agados Handy-7) 205 × 125 × 35 cm
+  </p>
+  <p style="color:DodgerBlue;">
+    větší vozík (Agados NP-26 N1) 265 × 124 × 40 cm
+  </p>
+
+  <p>Půjčovné na 24 hod. … 500 Kč</p>
+  <p>Půjčovné na 6 hod. … 350 Kč</p>
+  <p>Zapůjčení kurtny … 50 Kč</p>
+
+  <p style="color:MediumSeaGreen;">
+    Vratná kauce 2000 Kč v hotovosti předem.
+  </p>
+
+  <!-- KONTAKT -->
   <h1>Kontakt</h1>
-  <p><i class="fa fa-map-marker"></i> &nbsp;Brno Soběšice 644 00, Dohnalova (Zeiberlichova 131/1)</p>
-  <p><i class="fa fa-clock-o contact-icon"></i> &nbsp;Otevřeno denně 8:00 - 20:00, po předchozím tel. zavolání</p>
-  <p><i class="fa fa-phone"></i> &nbsp;+420 775 232 521</p>
-  <p><i class="fa fa-envelope"></i> &nbsp;abiword@email.cz</p>
 
-  <!-- odkaz na mapu seznam.cz -->
-  <p><iframe style="border:none" src="https://frame.mapy.cz/s/lerezojuce" width="380" height="333" frameborder="0"></iframe></p>
-</div>
+  <p>
+    <i class="fa fa-map-marker"></i>
+    &nbsp;Brno-Soběšice 644&nbsp;00, Dohnalova (Zeiberlichova&nbsp;131/1)
+  </p>
 
-<!-- about us section -->
-<div class="w3-container section" id="o-nas">
-  <h1>O nás</h1>
-  <p>Vítejte v Půjčovně vozíků. Jsme rodinná firma sídlící v Brně-Soběšicích, která se specializuje na půjčování přívěsných vozíků. Naším cílem je poskytovat kvalitní a spolehlivé služby pro všechny vaše přepravní potřeby.</p>
-  <p>Naše firma byla založena v roce 2020 a od té doby jsme pomohli stovkám zákazníků s přepravou jejich nákladů. Nabízíme širokou škálu přívěsných vozíků různých velikostí a typů, aby vyhovovaly vašim konkrétním požadavkům.</p>
-  <p>Kontaktujte nás, abychom vám mohli pomoci s výběrem nejvhodnějšího vozíku pro vaše potřeby.</p>
-</div>
+  <p>
+    <i class="fa fa-clock-o"></i>
+    &nbsp;Otevřeno denně 8:00–20:00, po předchozím tel. zavolání
+  </p>
+  
+  <p>
+     <i class="fa fa-envelope"></i> 
+     &nbsp;info@autoskola-real.cz
+  </p>
 
-<!-- services section -->
-<div class="w3-container section" id="sluzby">
-  <h1>Služby a ceník</h1>
-  <p style="color:DodgerBlue;">menší vozík (Agados Handy - 7) 205x125x35 cm</p>
-  <p style="color:DodgerBlue;">větší vozík (Agados Přívěs NP-26 N1) 265 × 124 × 40 cm</p>
-  <p>Půjčovné na 24 hod. ... 400 Kč</p>
-  <p>Půjčovné na 6 hod. ... 250 Kč</p>
-  <p>Zapůjčení kurtny ... 50 Kč</p>
+  <p>
+    <i class="fa fa-phone"></i>
+    &nbsp;+420&nbsp;775&nbsp;232&nbsp;521
+  </p>
+
+  <!-- MAPA -->
+  <iframe
+    style="border:none; margin-top:16px;"
+    src="https://frame.mapy.cz/s/lerezojuce"
+    width="380"
+    height="333"
+    frameborder="0">
+  </iframe>
+
 </div>
 
 <!-- terms and conditions section -->
@@ -126,36 +143,27 @@
   <p>V Brně dne 25.05.2024</p>
 </div>
 
-<!-- contact section -->
-<div class="w3-container section" id="kontakt">
-  <h1>Kontakt</h1>
-  <p><i class="fa fa-map-marker"></i> &nbsp;Brno Soběšice 644 00, Dohnalova (Zeiberlichova 131/1)</p>
-  <p><i class="fa fa-clock-o contact-icon"></i> &nbsp;Otevřeno denně 8:00 - 20:00, po předchozím tel. zavolání</p>
-  <p><i class="fa fa-envelope"></i> &nbsp;info@voziky-brno.cz</p>
-  <p><i class="fa fa-phone"></i> &nbsp;+420 775 232 521</p>
-
-  <!-- odkaz na mapu seznam.cz -->
-  <iframe style="border:none" src="https://frame.mapy.cz/s/lerezojuce" width="500" height="333" frameborder="0"></iframe>
-</div>
-
-<!-- footer -->
+<!-- FOOTER -->
 <div class="w3-container w3-light-grey w3-padding-32">
   <p class="w3-small w3-center">
-    <a class="odkazAS" href="https://www.autoskola-real.cz" target="_blank" rel="noopener noreferrer">
-      Řidičák na sk.B - Autoškola REAL, Brno
+    <a class="odkazAS"
+       href="https://www.autoskola-real.cz"
+       target="_blank"
+       rel="noopener noreferrer">
+      Řidičák na sk. B – Autoškola REAL, Brno
     </a>
   </p>
 
   <p class="w3-small w3-center">
-    © 2024-2026 voziky-Brno.cz
-    &nbsp;&nbsp;&nbsp; <i class="fa fa-eye"></i> &nbsp;
+    © 2024–2026 voziky-brno.cz
+    &nbsp;&nbsp;&nbsp;
 
-    <!-- TOPlist.cz počítadlo návštěvnosti -->
+    <!-- TOPlist.cz -->
     <span id="toplistcz1841175">
       <noscript>
-        <a href="https://www.toplist.cz" title="TOPlist" target="_blank" rel="noopener">
+        <a href="https://www.toplist.cz" target="_blank" rel="noopener">
           <img src="https://toplist.cz/count.asp?id=1841175&logo=mc&njs=1"
-               alt="TOPlist" width="88" height="60" border="0">
+               alt="TOPlist" width="88" height="60">
         </a>
       </noscript>
     </span>
@@ -163,11 +171,12 @@
     <script>
       (function (d, e, s) {
         d.getElementById('toplistcz1841175').innerHTML =
-          '<a href="https://www.toplist.cz" title="TOPlist" target="_blank" rel="noopener">' +
+          '<a href="https://www.toplist.cz" target="_blank" rel="noopener">' +
           '<img src="https://toplist.cz/count.asp?id=1841175&logo=mc&http=' +
-          e(d.referrer) + '&t=' + e(d.title) + '&l=' + e(d.URL) + '&wi=' + e(s.width) +
-          '&he=' + e(s.height) + '&cd=' + e(s.colorDepth) +
-          '" width="88" height="60" border="0" alt="TOPlist" />' +
+          e(d.referrer) + '&t=' + e(d.title) + '&l=' + e(d.URL) +
+          '&wi=' + e(s.width) + '&he=' + e(s.height) +
+          '&cd=' + e(s.colorDepth) +
+          '" width="88" height="60" alt="TOPlist">' +
           '</a>';
       }(document, encodeURIComponent, window.screen));
     </script>
@@ -176,3 +185,4 @@
 
 </body>
 </html>
+
