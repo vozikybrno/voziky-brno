@@ -13,3 +13,7 @@ img {
 .odkazAS:active {color: darkBlue}
 .odkazAS:hover {color: darkBlue}
 
+/* TOPlist – bez zaoblení rohů */
+#toplistcz1841175 img {
+  border-radius: 0 !important;
+}
