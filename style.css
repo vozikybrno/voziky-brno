@@ -28,3 +28,23 @@ img {
 .cena-popis { color: DodgerBlue; }
 .kauce      { color: MediumSeaGreen; }
 
+/* --- Announcement (zelený pruh) --- */
+
+/* Text se může lámat, ale... */
+.announcement-line {
+  white-space: normal;
+}
+
+/* ...telefon (ikona + číslo) se nikdy nezlomí uprostřed */
+.phone-nowrap {
+  white-space: nowrap;
+}
+
+/* Telefonní odkaz v zeleném pruhu: stejná barva jako text, bez podtržení */
+.w3-panel a {
+  color: inherit;
+  text-decoration: underline;
+}
+.w3-panel a:hover {
+  text-decoration: underline;
+}
